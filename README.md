@@ -30,7 +30,7 @@ To install and run the HeFits app:
 Contributions to the HeFits app are welcome! If you would like to contribute, please fork the repository, make your changes, and submit a pull request.  
 
 ## License
-This project is licensed under the [MIT License](LICENSE). Refer to the license file for more information.
+This project is licensed under the MIT License. Refer to the [`license file`](LICENSE) for more information.
 
 ## Authors:
 These are the contributors
