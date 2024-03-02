@@ -1,0 +1,17 @@
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.HeFitsDashBoardForm.resources
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.StartupForm.resources
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.vbproj.GenerateResource.cache
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.AssemblyInfoInputs.cache
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.AssemblyInfo.vb
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.vbproj.CoreCompileInputs.cache
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\HeFits.exe
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\HeFits.deps.json
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\HeFits.runtimeconfig.json
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\HeFits.dll
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\HeFits.pdb
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.dll
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\refint\HeFits.dll
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.pdb
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.genruntimeconfig.cache
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\ref\HeFits.dll
