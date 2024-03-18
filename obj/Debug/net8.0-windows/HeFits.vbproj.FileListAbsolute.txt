@@ -15,3 +15,10 @@ C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\refint\HeFits.dll
 C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.pdb
 C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.genruntimeconfig.cache
 C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\ref\HeFits.dll
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.sourcelink.json
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.SignupForm.resources
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.LoginForm.resources
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.ActivityTrackingForm.resources
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.BodyMeasurementsForm.resources
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.GoalsProgressForm.resources
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.SettingsForm.resources

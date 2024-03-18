@@ -27,7 +27,9 @@ Partial Class StartupForm
         Label2 = New Label()
         StartupButton = New Button()
         ExitHeFitsButton = New Button()
+        LogoPictureBox = New PictureBox()
         GroupBox1.SuspendLayout()
+        CType(LogoPictureBox, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' GroupBox1
@@ -44,7 +46,7 @@ Partial Class StartupForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Bernard MT Condensed", 16.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Bernard MT Condensed", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(62, 27)
         Label1.Name = "Label1"
         Label1.Size = New Size(275, 38)
@@ -54,7 +56,7 @@ Partial Class StartupForm
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Arial", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(82, 91)
         Label2.Name = "Label2"
         Label2.Size = New Size(217, 21)
@@ -64,7 +66,7 @@ Partial Class StartupForm
         ' StartupButton
         ' 
         StartupButton.BackColor = Color.LawnGreen
-        StartupButton.Location = New Point(240, 412)
+        StartupButton.Location = New Point(297, 427)
         StartupButton.Name = "StartupButton"
         StartupButton.Size = New Size(184, 61)
         StartupButton.TabIndex = 3
@@ -75,18 +77,27 @@ Partial Class StartupForm
         ' 
         ExitHeFitsButton.BackColor = Color.DarkRed
         ExitHeFitsButton.ForeColor = SystemColors.ButtonFace
-        ExitHeFitsButton.Location = New Point(696, 413)
+        ExitHeFitsButton.Location = New Point(695, 428)
         ExitHeFitsButton.Name = "ExitHeFitsButton"
         ExitHeFitsButton.Size = New Size(77, 60)
         ExitHeFitsButton.TabIndex = 4
         ExitHeFitsButton.Text = "Close"
         ExitHeFitsButton.UseVisualStyleBackColor = False
         ' 
+        ' LogoPictureBox
+        ' 
+        LogoPictureBox.Location = New Point(218, 201)
+        LogoPictureBox.Name = "LogoPictureBox"
+        LogoPictureBox.Size = New Size(335, 205)
+        LogoPictureBox.TabIndex = 5
+        LogoPictureBox.TabStop = False
+        ' 
         ' StartupForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 500)
+        Controls.Add(LogoPictureBox)
         Controls.Add(ExitHeFitsButton)
         Controls.Add(StartupButton)
         Controls.Add(GroupBox1)
@@ -94,6 +105,7 @@ Partial Class StartupForm
         Text = "HeFits App"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        CType(LogoPictureBox, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
     Friend WithEvents GroupBox1 As GroupBox
@@ -101,5 +113,6 @@ Partial Class StartupForm
     Friend WithEvents Label1 As Label
     Friend WithEvents StartupButton As Button
     Friend WithEvents ExitHeFitsButton As Button
+    Friend WithEvents LogoPictureBox As PictureBox
 
 End Class

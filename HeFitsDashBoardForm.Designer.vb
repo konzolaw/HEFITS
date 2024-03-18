@@ -22,73 +22,68 @@ Partial Class HeFitsDashBoardForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        ActivityTrackingButton = New Button()
-        NutritionButton = New Button()
-        VitalSignsButton = New Button()
-        FeedbackButton = New Button()
+        GroupBox1 = New GroupBox()
+        Label2 = New Label()
+        Label1 = New Label()
+        BackToStartScreenButton = New Button()
         GoalsProgressButton = New Button()
         SettingsButton = New Button()
-        GroupBox1 = New GroupBox()
-        Label1 = New Label()
-        Label2 = New Label()
-        WellnessInsightsButton = New Button()
-        BackToStartScreenButton = New Button()
+        BodyMeasurementsButton = New Button()
+        ActivityTrackingButton = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' ActivityTrackingButton
+        ' GroupBox1
         ' 
-        ActivityTrackingButton.BackColor = SystemColors.InactiveCaption
-        ActivityTrackingButton.ForeColor = Color.Blue
-        ActivityTrackingButton.Location = New Point(33, 205)
-        ActivityTrackingButton.Name = "ActivityTrackingButton"
-        ActivityTrackingButton.Size = New Size(215, 34)
-        ActivityTrackingButton.TabIndex = 0
-        ActivityTrackingButton.Text = "Activity Tracking"
-        ActivityTrackingButton.TextAlign = ContentAlignment.MiddleLeft
-        ActivityTrackingButton.UseVisualStyleBackColor = False
+        GroupBox1.Controls.Add(Label2)
+        GroupBox1.Controls.Add(Label1)
+        GroupBox1.Font = New Font("Bernard MT Condensed", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox1.Location = New Point(33, 24)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(423, 175)
+        GroupBox1.TabIndex = 6
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "DASHBOARD"
         ' 
-        ' NutritionButton
+        ' Label2
         ' 
-        NutritionButton.BackColor = SystemColors.InactiveCaption
-        NutritionButton.ForeColor = Color.Blue
-        NutritionButton.Location = New Point(33, 263)
-        NutritionButton.Name = "NutritionButton"
-        NutritionButton.Size = New Size(215, 34)
-        NutritionButton.TabIndex = 1
-        NutritionButton.Text = "Nutrition"
-        NutritionButton.TextAlign = ContentAlignment.MiddleLeft
-        NutritionButton.UseVisualStyleBackColor = False
+        Label2.AutoSize = True
+        Label2.BorderStyle = BorderStyle.Fixed3D
+        Label2.Font = New Font("Lucida Sans Typewriter", 13F)
+        Label2.Location = New Point(6, 113)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(255, 31)
+        Label2.TabIndex = 1
+        Label2.Text = "Upcoming goals:"
         ' 
-        ' VitalSignsButton
+        ' Label1
         ' 
-        VitalSignsButton.BackColor = SystemColors.InactiveCaption
-        VitalSignsButton.ForeColor = Color.Blue
-        VitalSignsButton.Location = New Point(33, 320)
-        VitalSignsButton.Name = "VitalSignsButton"
-        VitalSignsButton.Size = New Size(215, 34)
-        VitalSignsButton.TabIndex = 2
-        VitalSignsButton.Text = "Vital Signs"
-        VitalSignsButton.TextAlign = ContentAlignment.MiddleLeft
-        VitalSignsButton.UseVisualStyleBackColor = False
+        Label1.AutoSize = True
+        Label1.BorderStyle = BorderStyle.Fixed3D
+        Label1.Font = New Font("Lucida Sans Typewriter", 13F)
+        Label1.Location = New Point(6, 71)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(287, 31)
+        Label1.TabIndex = 0
+        Label1.Text = "Today's Progress:"
         ' 
-        ' FeedbackButton
+        ' BackToStartScreenButton
         ' 
-        FeedbackButton.BackColor = SystemColors.InactiveCaption
-        FeedbackButton.ForeColor = Color.Blue
-        FeedbackButton.Location = New Point(497, 320)
-        FeedbackButton.Name = "FeedbackButton"
-        FeedbackButton.Size = New Size(215, 34)
-        FeedbackButton.TabIndex = 3
-        FeedbackButton.Text = "Feedback"
-        FeedbackButton.TextAlign = ContentAlignment.MiddleLeft
-        FeedbackButton.UseVisualStyleBackColor = False
+        BackToStartScreenButton.BackColor = Color.DarkRed
+        BackToStartScreenButton.ForeColor = SystemColors.ButtonFace
+        BackToStartScreenButton.Location = New Point(604, 403)
+        BackToStartScreenButton.Name = "BackToStartScreenButton"
+        BackToStartScreenButton.Size = New Size(108, 57)
+        BackToStartScreenButton.TabIndex = 8
+        BackToStartScreenButton.Text = "<<< Back"
+        BackToStartScreenButton.TextAlign = ContentAlignment.MiddleLeft
+        BackToStartScreenButton.UseVisualStyleBackColor = False
         ' 
         ' GoalsProgressButton
         ' 
         GoalsProgressButton.BackColor = SystemColors.InactiveCaption
         GoalsProgressButton.ForeColor = Color.Blue
-        GoalsProgressButton.Location = New Point(33, 377)
+        GoalsProgressButton.Location = New Point(497, 320)
         GoalsProgressButton.Name = "GoalsProgressButton"
         GoalsProgressButton.Size = New Size(215, 34)
         GoalsProgressButton.TabIndex = 4
@@ -108,63 +103,29 @@ Partial Class HeFitsDashBoardForm
         SettingsButton.TextAlign = ContentAlignment.MiddleLeft
         SettingsButton.UseVisualStyleBackColor = False
         ' 
-        ' GroupBox1
+        ' BodyMeasurementsButton
         ' 
-        GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Label1)
-        GroupBox1.Font = New Font("Bernard MT Condensed", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox1.Location = New Point(33, 24)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(423, 175)
-        GroupBox1.TabIndex = 6
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "DASHBOARD"
+        BodyMeasurementsButton.BackColor = SystemColors.InactiveCaption
+        BodyMeasurementsButton.ForeColor = Color.Blue
+        BodyMeasurementsButton.Location = New Point(33, 320)
+        BodyMeasurementsButton.Name = "BodyMeasurementsButton"
+        BodyMeasurementsButton.Size = New Size(215, 34)
+        BodyMeasurementsButton.TabIndex = 2
+        BodyMeasurementsButton.Text = "Body Measurements"
+        BodyMeasurementsButton.TextAlign = ContentAlignment.MiddleLeft
+        BodyMeasurementsButton.UseVisualStyleBackColor = False
         ' 
-        ' Label1
+        ' ActivityTrackingButton
         ' 
-        Label1.AutoSize = True
-        Label1.BorderStyle = BorderStyle.Fixed3D
-        Label1.Font = New Font("Lucida Sans Typewriter", 13F)
-        Label1.Location = New Point(6, 71)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(287, 31)
-        Label1.TabIndex = 0
-        Label1.Text = "Today's Progress:"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BorderStyle = BorderStyle.Fixed3D
-        Label2.Font = New Font("Lucida Sans Typewriter", 13F)
-        Label2.Location = New Point(6, 113)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(255, 31)
-        Label2.TabIndex = 1
-        Label2.Text = "Upcoming goals:"
-        ' 
-        ' WellnessInsightsButton
-        ' 
-        WellnessInsightsButton.BackColor = SystemColors.InactiveCaption
-        WellnessInsightsButton.ForeColor = Color.Blue
-        WellnessInsightsButton.Location = New Point(497, 263)
-        WellnessInsightsButton.Name = "WellnessInsightsButton"
-        WellnessInsightsButton.Size = New Size(215, 34)
-        WellnessInsightsButton.TabIndex = 7
-        WellnessInsightsButton.Text = "Wellness Insights"
-        WellnessInsightsButton.TextAlign = ContentAlignment.MiddleLeft
-        WellnessInsightsButton.UseVisualStyleBackColor = False
-        ' 
-        ' BackToStartScreenButton
-        ' 
-        BackToStartScreenButton.BackColor = Color.DarkRed
-        BackToStartScreenButton.ForeColor = SystemColors.ButtonFace
-        BackToStartScreenButton.Location = New Point(604, 403)
-        BackToStartScreenButton.Name = "BackToStartScreenButton"
-        BackToStartScreenButton.Size = New Size(108, 57)
-        BackToStartScreenButton.TabIndex = 8
-        BackToStartScreenButton.Text = "<<< Back"
-        BackToStartScreenButton.TextAlign = ContentAlignment.MiddleLeft
-        BackToStartScreenButton.UseVisualStyleBackColor = False
+        ActivityTrackingButton.BackColor = SystemColors.InactiveCaption
+        ActivityTrackingButton.ForeColor = Color.Blue
+        ActivityTrackingButton.Location = New Point(33, 205)
+        ActivityTrackingButton.Name = "ActivityTrackingButton"
+        ActivityTrackingButton.Size = New Size(215, 34)
+        ActivityTrackingButton.TabIndex = 0
+        ActivityTrackingButton.Text = "Activity Tracking"
+        ActivityTrackingButton.TextAlign = ContentAlignment.MiddleLeft
+        ActivityTrackingButton.UseVisualStyleBackColor = False
         ' 
         ' HeFitsDashBoardForm
         ' 
@@ -172,13 +133,10 @@ Partial Class HeFitsDashBoardForm
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(745, 489)
         Controls.Add(BackToStartScreenButton)
-        Controls.Add(WellnessInsightsButton)
         Controls.Add(GroupBox1)
         Controls.Add(SettingsButton)
         Controls.Add(GoalsProgressButton)
-        Controls.Add(FeedbackButton)
-        Controls.Add(VitalSignsButton)
-        Controls.Add(NutritionButton)
+        Controls.Add(BodyMeasurementsButton)
         Controls.Add(ActivityTrackingButton)
         Name = "HeFitsDashBoardForm"
         Text = "HeFits App :)"
@@ -186,16 +144,16 @@ Partial Class HeFitsDashBoardForm
         GroupBox1.PerformLayout()
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents ActivityTrackingButton As Button
     Friend WithEvents NutritionButton As Button
     Friend WithEvents VitalSignsButton As Button
     Friend WithEvents FeedbackButton As Button
-    Friend WithEvents GoalsProgressButton As Button
-    Friend WithEvents SettingsButton As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents WellnessInsightsButton As Button
     Friend WithEvents BackToStartScreenButton As Button
+    Friend WithEvents GoalsProgressButton As Button
+    Friend WithEvents SettingsButton As Button
+    Friend WithEvents BodyMeasurementsButton As Button
+    Friend WithEvents ActivityTrackingButton As Button
 End Class
