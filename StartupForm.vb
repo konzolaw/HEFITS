@@ -14,31 +14,15 @@
         End Try
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
     Private Sub StartupButton_Click(sender As Object, e As EventArgs) Handles StartupButton.Click
-        ' Create an instance of the signupForm
-        Dim signupForm As New SignupForm()
-
-        ' Show the signupForm
-        signupForm.Show()
-
-        ' Optionally, hide the current form
-        ' Me.Hide()
+        ' Open the login form directly
+        Dim loginForm As New LoginForm()
+        loginForm.Show()
+        Me.Hide() ' Optionally hide the startup form
     End Sub
 
     Private Sub ExitHeFitsButton_Click(sender As Object, e As EventArgs) Handles ExitHeFitsButton.Click
-        ' terminate the application/welcome form
+        ' Terminate the application/welcome form
         Me.Close()
-    End Sub
-
-    Private Sub LogoPictureBox_Click(sender As Object, e As EventArgs) Handles LogoPictureBox.Click
-
     End Sub
 End Class

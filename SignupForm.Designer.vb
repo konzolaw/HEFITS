@@ -23,16 +23,20 @@ Partial Class SignupForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         GroupBox1 = New GroupBox()
-        Label1 = New Label()
-        Label2 = New Label()
-        SignupButton = New Button()
-        SignupEmailTextBox = New TextBox()
         SignupPasswordMaskedTextBox = New MaskedTextBox()
+        SignupEmailTextBox = New TextBox()
+        SignupButton = New Button()
+        Label2 = New Label()
+        Label1 = New Label()
+        SignupUsernameTextBox = New TextBox()
+        Label3 = New Label()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(SignupUsernameTextBox)
+        GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(SignupPasswordMaskedTextBox)
         GroupBox1.Controls.Add(SignupEmailTextBox)
         GroupBox1.Controls.Add(SignupButton)
@@ -44,23 +48,19 @@ Partial Class SignupForm
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         ' 
-        ' Label1
+        ' SignupPasswordMaskedTextBox
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(64, 48)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(58, 25)
-        Label1.TabIndex = 0
-        Label1.Text = "Email:"
+        SignupPasswordMaskedTextBox.Location = New Point(189, 148)
+        SignupPasswordMaskedTextBox.Name = "SignupPasswordMaskedTextBox"
+        SignupPasswordMaskedTextBox.Size = New Size(259, 31)
+        SignupPasswordMaskedTextBox.TabIndex = 4
         ' 
-        ' Label2
+        ' SignupEmailTextBox
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(64, 119)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(91, 25)
-        Label2.TabIndex = 1
-        Label2.Text = "Password:"
+        SignupEmailTextBox.Location = New Point(189, 50)
+        SignupEmailTextBox.Name = "SignupEmailTextBox"
+        SignupEmailTextBox.Size = New Size(265, 31)
+        SignupEmailTextBox.TabIndex = 3
         ' 
         ' SignupButton
         ' 
@@ -71,19 +71,39 @@ Partial Class SignupForm
         SignupButton.Text = "Sign Up"
         SignupButton.UseVisualStyleBackColor = True
         ' 
-        ' SignupEmailTextBox
+        ' Label2
         ' 
-        SignupEmailTextBox.Location = New Point(189, 50)
-        SignupEmailTextBox.Name = "SignupEmailTextBox"
-        SignupEmailTextBox.Size = New Size(265, 31)
-        SignupEmailTextBox.TabIndex = 3
+        Label2.AutoSize = True
+        Label2.Location = New Point(70, 148)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(91, 25)
+        Label2.TabIndex = 1
+        Label2.Text = "Password:"
         ' 
-        ' SignupPasswordMaskedTextBox
+        ' Label1
         ' 
-        SignupPasswordMaskedTextBox.Location = New Point(189, 119)
-        SignupPasswordMaskedTextBox.Name = "SignupPasswordMaskedTextBox"
-        SignupPasswordMaskedTextBox.Size = New Size(259, 31)
-        SignupPasswordMaskedTextBox.TabIndex = 4
+        Label1.AutoSize = True
+        Label1.Location = New Point(64, 48)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(58, 25)
+        Label1.TabIndex = 0
+        Label1.Text = "Email:"
+        ' 
+        ' SignupUsernameTextBox
+        ' 
+        SignupUsernameTextBox.Location = New Point(189, 98)
+        SignupUsernameTextBox.Name = "SignupUsernameTextBox"
+        SignupUsernameTextBox.Size = New Size(259, 31)
+        SignupUsernameTextBox.TabIndex = 6
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(64, 96)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(95, 25)
+        Label3.TabIndex = 5
+        Label3.Text = "Username:"
         ' 
         ' SignupForm
         ' 
@@ -104,4 +124,6 @@ Partial Class SignupForm
     Friend WithEvents SignupButton As Button
     Friend WithEvents SignupPasswordMaskedTextBox As MaskedTextBox
     Friend WithEvents SignupEmailTextBox As TextBox
+    Friend WithEvents SignupUsernameTextBox As TextBox
+    Friend WithEvents Label3 As Label
 End Class

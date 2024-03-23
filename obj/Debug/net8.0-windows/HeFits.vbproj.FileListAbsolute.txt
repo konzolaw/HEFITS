@@ -22,3 +22,9 @@ C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.ActivityTrackingForm.
 C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.BodyMeasurementsForm.resources
 C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.GoalsProgressForm.resources
 C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.SettingsForm.resources
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\merou\goop\HeFits\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.vbproj.AssemblyReference.cache
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.vbproj.CopyComplete
+C:\Users\merou\goop\HeFits\obj\Debug\net8.0-windows\HeFits.Resources.resources
