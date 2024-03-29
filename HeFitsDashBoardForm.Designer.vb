@@ -25,7 +25,6 @@ Partial Class HeFitsDashBoardForm
         GroupBox1 = New GroupBox()
         Label2 = New Label()
         Label1 = New Label()
-        BackToStartScreenButton = New Button()
         GoalsProgressButton = New Button()
         SettingsButton = New Button()
         BodyMeasurementsButton = New Button()
@@ -66,18 +65,6 @@ Partial Class HeFitsDashBoardForm
         Label1.Size = New Size(287, 31)
         Label1.TabIndex = 0
         Label1.Text = "Today's Progress:"
-        ' 
-        ' BackToStartScreenButton
-        ' 
-        BackToStartScreenButton.BackColor = Color.DarkRed
-        BackToStartScreenButton.ForeColor = SystemColors.ButtonFace
-        BackToStartScreenButton.Location = New Point(604, 403)
-        BackToStartScreenButton.Name = "BackToStartScreenButton"
-        BackToStartScreenButton.Size = New Size(108, 57)
-        BackToStartScreenButton.TabIndex = 8
-        BackToStartScreenButton.Text = "<<< Back"
-        BackToStartScreenButton.TextAlign = ContentAlignment.MiddleLeft
-        BackToStartScreenButton.UseVisualStyleBackColor = False
         ' 
         ' GoalsProgressButton
         ' 
@@ -131,8 +118,7 @@ Partial Class HeFitsDashBoardForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(745, 489)
-        Controls.Add(BackToStartScreenButton)
+        ClientSize = New Size(745, 411)
         Controls.Add(GroupBox1)
         Controls.Add(SettingsButton)
         Controls.Add(GoalsProgressButton)
@@ -151,7 +137,6 @@ Partial Class HeFitsDashBoardForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents WellnessInsightsButton As Button
-    Friend WithEvents BackToStartScreenButton As Button
     Friend WithEvents GoalsProgressButton As Button
     Friend WithEvents SettingsButton As Button
     Friend WithEvents BodyMeasurementsButton As Button

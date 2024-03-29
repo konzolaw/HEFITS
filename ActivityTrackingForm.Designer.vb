@@ -22,158 +22,74 @@ Partial Class ActivityTrackingForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        GroupBox1 = New GroupBox()
-        GroupBox2 = New GroupBox()
         GroupBox3 = New GroupBox()
-        Label1 = New Label()
-        Label2 = New Label()
-        CyclingDurationTextBox = New TextBox()
-        CyclingCaloriesTextBox = New TextBox()
-        TreadmillCaloriesTextBox = New TextBox()
-        TreadmillDurationTextBox = New TextBox()
-        Label7 = New Label()
-        Label8 = New Label()
-        WeightLiftingMETTextBox = New TextBox()
-        WeightLiftingDurationTextBox = New TextBox()
+        SubmitButton = New Button()
+        CaloriesTextBox = New TextBox()
+        Label5 = New Label()
+        METTextBox = New TextBox()
         Label3 = New Label()
         Label4 = New Label()
-        WeightLiftingCaloriesTextBox = New TextBox()
-        Label5 = New Label()
-        WeightLiftingSubmitButton = New Button()
-        TreadmillSubmitButton = New Button()
-        CyclingSubmitButton = New Button()
         BackToDashboardButton = New Button()
-        GroupBox1.SuspendLayout()
-        GroupBox2.SuspendLayout()
+        ActivitytypeComboBox = New ComboBox()
+        Label10 = New Label()
+        DurationComboBox = New ComboBox()
         GroupBox3.SuspendLayout()
         SuspendLayout()
         ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.Controls.Add(CyclingSubmitButton)
-        GroupBox1.Controls.Add(CyclingCaloriesTextBox)
-        GroupBox1.Controls.Add(CyclingDurationTextBox)
-        GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(39, 35)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(294, 182)
-        GroupBox1.TabIndex = 0
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "Cycling:"
-        ' 
-        ' GroupBox2
-        ' 
-        GroupBox2.Controls.Add(TreadmillSubmitButton)
-        GroupBox2.Controls.Add(TreadmillCaloriesTextBox)
-        GroupBox2.Controls.Add(TreadmillDurationTextBox)
-        GroupBox2.Controls.Add(Label8)
-        GroupBox2.Controls.Add(Label7)
-        GroupBox2.Location = New Point(440, 44)
-        GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(294, 173)
-        GroupBox2.TabIndex = 1
-        GroupBox2.TabStop = False
-        GroupBox2.Text = "Treadmill:"
-        ' 
         ' GroupBox3
         ' 
-        GroupBox3.Controls.Add(WeightLiftingSubmitButton)
-        GroupBox3.Controls.Add(WeightLiftingCaloriesTextBox)
+        GroupBox3.Controls.Add(DurationComboBox)
+        GroupBox3.Controls.Add(ActivitytypeComboBox)
+        GroupBox3.Controls.Add(Label10)
+        GroupBox3.Controls.Add(SubmitButton)
+        GroupBox3.Controls.Add(CaloriesTextBox)
         GroupBox3.Controls.Add(Label5)
-        GroupBox3.Controls.Add(WeightLiftingMETTextBox)
-        GroupBox3.Controls.Add(WeightLiftingDurationTextBox)
+        GroupBox3.Controls.Add(METTextBox)
         GroupBox3.Controls.Add(Label3)
         GroupBox3.Controls.Add(Label4)
-        GroupBox3.Location = New Point(39, 233)
+        GroupBox3.Location = New Point(48, 37)
         GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(299, 224)
+        GroupBox3.Size = New Size(396, 358)
         GroupBox3.TabIndex = 1
         GroupBox3.TabStop = False
-        GroupBox3.Text = "Weight Lifting:"
+        GroupBox3.Text = "Activity:"
         ' 
-        ' Label1
+        ' SubmitButton
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(24, 30)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(83, 25)
-        Label1.TabIndex = 0
-        Label1.Text = "duration:"
+        SubmitButton.Location = New Point(120, 254)
+        SubmitButton.Name = "SubmitButton"
+        SubmitButton.Size = New Size(128, 36)
+        SubmitButton.TabIndex = 14
+        SubmitButton.Text = "Submit"
+        SubmitButton.UseVisualStyleBackColor = True
         ' 
-        ' Label2
+        ' CaloriesTextBox
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(22, 73)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(75, 25)
-        Label2.TabIndex = 1
-        Label2.Text = "calories:"
+        CaloriesTextBox.Location = New Point(142, 183)
+        CaloriesTextBox.Name = "CaloriesTextBox"
+        CaloriesTextBox.Size = New Size(187, 31)
+        CaloriesTextBox.TabIndex = 13
         ' 
-        ' CyclingDurationTextBox
+        ' Label5
         ' 
-        CyclingDurationTextBox.Location = New Point(128, 30)
-        CyclingDurationTextBox.Name = "CyclingDurationTextBox"
-        CyclingDurationTextBox.Size = New Size(121, 31)
-        CyclingDurationTextBox.TabIndex = 2
+        Label5.AutoSize = True
+        Label5.Location = New Point(36, 183)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(75, 25)
+        Label5.TabIndex = 12
+        Label5.Text = "calories:"
         ' 
-        ' CyclingCaloriesTextBox
+        ' METTextBox
         ' 
-        CyclingCaloriesTextBox.Location = New Point(128, 73)
-        CyclingCaloriesTextBox.Name = "CyclingCaloriesTextBox"
-        CyclingCaloriesTextBox.Size = New Size(121, 31)
-        CyclingCaloriesTextBox.TabIndex = 3
-        ' 
-        ' TreadmillCaloriesTextBox
-        ' 
-        TreadmillCaloriesTextBox.Location = New Point(131, 70)
-        TreadmillCaloriesTextBox.Name = "TreadmillCaloriesTextBox"
-        TreadmillCaloriesTextBox.Size = New Size(121, 31)
-        TreadmillCaloriesTextBox.TabIndex = 7
-        ' 
-        ' TreadmillDurationTextBox
-        ' 
-        TreadmillDurationTextBox.Location = New Point(131, 33)
-        TreadmillDurationTextBox.Name = "TreadmillDurationTextBox"
-        TreadmillDurationTextBox.Size = New Size(121, 31)
-        TreadmillDurationTextBox.TabIndex = 6
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(25, 70)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(75, 25)
-        Label7.TabIndex = 5
-        Label7.Text = "calories:"
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(27, 33)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(83, 25)
-        Label8.TabIndex = 4
-        Label8.Text = "duration:"
-        ' 
-        ' WeightLiftingMETTextBox
-        ' 
-        WeightLiftingMETTextBox.Location = New Point(138, 77)
-        WeightLiftingMETTextBox.Name = "WeightLiftingMETTextBox"
-        WeightLiftingMETTextBox.Size = New Size(121, 31)
-        WeightLiftingMETTextBox.TabIndex = 11
-        ' 
-        ' WeightLiftingDurationTextBox
-        ' 
-        WeightLiftingDurationTextBox.Location = New Point(138, 40)
-        WeightLiftingDurationTextBox.Name = "WeightLiftingDurationTextBox"
-        WeightLiftingDurationTextBox.Size = New Size(121, 31)
-        WeightLiftingDurationTextBox.TabIndex = 10
+        METTextBox.Location = New Point(142, 135)
+        METTextBox.Name = "METTextBox"
+        METTextBox.Size = New Size(187, 31)
+        METTextBox.TabIndex = 11
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(34, 40)
+        Label3.Location = New Point(38, 84)
         Label3.Name = "Label3"
         Label3.Size = New Size(83, 25)
         Label3.TabIndex = 8
@@ -182,54 +98,11 @@ Partial Class ActivityTrackingForm
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(32, 77)
+        Label4.Location = New Point(36, 135)
         Label4.Name = "Label4"
         Label4.Size = New Size(50, 25)
         Label4.TabIndex = 9
         Label4.Text = "MET:"
-        ' 
-        ' WeightLiftingCaloriesTextBox
-        ' 
-        WeightLiftingCaloriesTextBox.Location = New Point(138, 114)
-        WeightLiftingCaloriesTextBox.Name = "WeightLiftingCaloriesTextBox"
-        WeightLiftingCaloriesTextBox.Size = New Size(121, 31)
-        WeightLiftingCaloriesTextBox.TabIndex = 13
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(32, 114)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(75, 25)
-        Label5.TabIndex = 12
-        Label5.Text = "calories:"
-        ' 
-        ' WeightLiftingSubmitButton
-        ' 
-        WeightLiftingSubmitButton.Location = New Point(93, 171)
-        WeightLiftingSubmitButton.Name = "WeightLiftingSubmitButton"
-        WeightLiftingSubmitButton.Size = New Size(128, 36)
-        WeightLiftingSubmitButton.TabIndex = 14
-        WeightLiftingSubmitButton.Text = "Submit"
-        WeightLiftingSubmitButton.UseVisualStyleBackColor = True
-        ' 
-        ' TreadmillSubmitButton
-        ' 
-        TreadmillSubmitButton.Location = New Point(79, 123)
-        TreadmillSubmitButton.Name = "TreadmillSubmitButton"
-        TreadmillSubmitButton.Size = New Size(128, 36)
-        TreadmillSubmitButton.TabIndex = 15
-        TreadmillSubmitButton.Text = "Submit"
-        TreadmillSubmitButton.UseVisualStyleBackColor = True
-        ' 
-        ' CyclingSubmitButton
-        ' 
-        CyclingSubmitButton.Location = New Point(82, 132)
-        CyclingSubmitButton.Name = "CyclingSubmitButton"
-        CyclingSubmitButton.Size = New Size(128, 36)
-        CyclingSubmitButton.TabIndex = 15
-        CyclingSubmitButton.Text = "Submit"
-        CyclingSubmitButton.UseVisualStyleBackColor = True
         ' 
         ' BackToDashboardButton
         ' 
@@ -240,45 +113,55 @@ Partial Class ActivityTrackingForm
         BackToDashboardButton.Text = "<<<Back"
         BackToDashboardButton.UseVisualStyleBackColor = True
         ' 
+        ' ActivitytypeComboBox
+        ' 
+        ActivitytypeComboBox.FormattingEnabled = True
+        ActivitytypeComboBox.Items.AddRange(New Object() {"Running", "Weightlifting", "Cycling"})
+        ActivitytypeComboBox.Location = New Point(142, 27)
+        ActivitytypeComboBox.Name = "ActivitytypeComboBox"
+        ActivitytypeComboBox.Size = New Size(182, 33)
+        ActivitytypeComboBox.TabIndex = 20
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Location = New Point(38, 30)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(51, 25)
+        Label10.TabIndex = 18
+        Label10.Text = "type:"
+        ' 
+        ' DurationComboBox
+        ' 
+        DurationComboBox.FormattingEnabled = True
+        DurationComboBox.Items.AddRange(New Object() {"10", "15", "30", "45", "60"})
+        DurationComboBox.Location = New Point(142, 81)
+        DurationComboBox.Name = "DurationComboBox"
+        DurationComboBox.Size = New Size(182, 33)
+        DurationComboBox.TabIndex = 21
+        ' 
         ' ActivityTrackingForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 501)
+        ClientSize = New Size(800, 541)
         Controls.Add(BackToDashboardButton)
         Controls.Add(GroupBox3)
-        Controls.Add(GroupBox2)
-        Controls.Add(GroupBox1)
         Name = "ActivityTrackingForm"
         Text = "ActivityTrackingForm"
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
-        GroupBox2.ResumeLayout(False)
-        GroupBox2.PerformLayout()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents CyclingCaloriesTextBox As TextBox
-    Friend WithEvents CyclingDurationTextBox As TextBox
-    Friend WithEvents TreadmillCaloriesTextBox As TextBox
-    Friend WithEvents TreadmillDurationTextBox As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents WeightLiftingMETTextBox As TextBox
-    Friend WithEvents WeightLiftingDurationTextBox As TextBox
+    Friend WithEvents METTextBox As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents WeightLiftingCaloriesTextBox As TextBox
+    Friend WithEvents CaloriesTextBox As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents WeightLiftingSubmitButton As Button
-    Friend WithEvents TreadmillSubmitButton As Button
-    Friend WithEvents CyclingSubmitButton As Button
+    Friend WithEvents SubmitButton As Button
     Friend WithEvents BackToDashboardButton As Button
+    Friend WithEvents ActivitytypeComboBox As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents DurationComboBox As ComboBox
 End Class

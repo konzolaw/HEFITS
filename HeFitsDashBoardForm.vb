@@ -1,42 +1,50 @@
 ﻿Public Class HeFitsDashBoardForm
+    Private ReadOnly loggedInUserID As Integer
+
+    ' Constructor with parameter to accept the logged-in user's ID
+    Public Sub New(userId As Integer)
+        InitializeComponent()
+        loggedInUserID = userId
+    End Sub
+
+    ' Button click event for activity tracking
     Private Sub ActivityTrackingButton_Click(sender As Object, e As EventArgs) Handles ActivityTrackingButton.Click
-        ' Create an instance of the form
-        Dim activityForm As New ActivityTrackingForm()
+        ' Create an instance of the ActivityTrackingForm and pass the user ID
+        Dim activityForm As New ActivityTrackingForm(loggedInUserID)
 
         activityForm.Show()
+
+        ' Close the dashboard form
+        Me.Close()
     End Sub
 
-    Private Sub HeFitsDashBoardForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub SettingsButton_Click(sender As Object, e As EventArgs) Handles SettingsButton.Click
-        ' Create an instance of the form
-        Dim settingForm As New SettingsForm()
-
-        settingForm.Show()
-    End Sub
-
+    ' Button click event for body measurements
     Private Sub BodyMeasurementsButton_Click(sender As Object, e As EventArgs) Handles BodyMeasurementsButton.Click
-        ' Create an instance of the form
-        Dim bodymeasurementsForm As New BodyMeasurementsForm()
+        ' Create an instance of the BodyMeasurementsForm and pass the user ID
+        Dim bodyMeasurementsForm As New BodyMeasurementsForm(loggedInUserID)
+        bodyMeasurementsForm.Show()
 
-        bodymeasurementsForm.Show()
+        ' Close the dashboard form
+        Me.Close()
     End Sub
 
+    ' Button click event for goals progress
     Private Sub GoalsProgressButton_Click(sender As Object, e As EventArgs) Handles GoalsProgressButton.Click
-        ' Create an instance of the form
-        Dim goalsprogressForm As New GoalsProgressForm()
+        ' Create an instance of the GoalsProgressForm and pass the user ID
+        Dim goalsProgressForm As New GoalsProgressForm(loggedInUserID)
+        goalsProgressForm.Show()
 
-        goalsprogressForm.Show()
+        ' Close the dashboard form
+        Me.Close()
     End Sub
 
-    Private Sub BackToStartScreenButton_Click(sender As Object, e As EventArgs) Handles BackToStartScreenButton.Click
-        ' go to start screen
+    ' Button click event for settings
+    Private Sub SettingsButton_Click(sender As Object, e As EventArgs) Handles SettingsButton.Click
+        ' Create an instance of the SettingsForm and pass the user ID
+        Dim settingsForm As New SettingsForm(loggedInUserID)
+        settingsForm.Show()
+
+        ' Close the dashboard form
         Me.Close()
     End Sub
 End Class

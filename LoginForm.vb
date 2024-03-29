@@ -1,8 +1,12 @@
 ﻿Imports Npgsql
 
 Public Class LoginForm
+    ' Shared property to store the logged-in user's ID
+    Public Shared LoggedInUserID As Integer = -1 ' Initialize with a default value
+
     Private connectionString As String = "Host=localhost;Username=postgres;Password=pseudo-xkcdpg;Database=hefits;"
 
+    ' Login button click event
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
         Dim identifier As String = LoginIdentifierTextBox.Text
         Dim password As String = LoginPasswordMaskedTextBox.Text
@@ -23,7 +27,7 @@ Public Class LoginForm
                     identifierType = "email"
                 End If
 
-                ' Query to check credentials
+                ' Query to check credentials and retrieve user ID
                 Dim query As String = $"SELECT UserID FROM users WHERE {identifierType} = @identifier AND password = @password"
                 Using cmd As New NpgsqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@identifier", identifier)
@@ -31,8 +35,11 @@ Public Class LoginForm
                     Dim userId As Object = cmd.ExecuteScalar()
 
                     If userId IsNot Nothing Then
+                        ' Store the user ID in the shared property
+                        LoginForm.LoggedInUserID = Convert.ToInt32(userId)
+
                         ' Open the dashboard form or perform actions after successful login
-                        Dim dashboardForm As New HeFitsDashBoardForm()
+                        Dim dashboardForm As New HeFitsDashBoardForm(LoginForm.LoggedInUserID)
                         dashboardForm.Show()
                         Me.Hide() ' Optionally hide the login form
                     Else
@@ -46,8 +53,9 @@ Public Class LoginForm
     End Sub
 
     Private Sub LoginPagePictureBox_Click(sender As Object, e As EventArgs) Handles LoginPagePictureBox.Click
-
+        ' Handle click event for login page picture box if needed
     End Sub
+
     Private Sub SignupLinkLabel_Click(sender As Object, e As EventArgs) Handles SignupLinkLabel.Click
         ' Open the signup form when the signup link is clicked
         Dim signupForm As New SignupForm()
@@ -55,8 +63,7 @@ Public Class LoginForm
         Me.Hide() ' Optionally hide the login form
     End Sub
 
-
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
+        ' Handle enter event for group box if needed
     End Sub
 End Class
