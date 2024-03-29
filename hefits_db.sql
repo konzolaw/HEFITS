@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS activitylog (
     activitytype VARCHAR(255) NOT NULL,
     duration INTEGER,
     met FLOAT,
-    distance FLOAT,
     calories FLOAT
 );
 
