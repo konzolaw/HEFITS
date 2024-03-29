@@ -8,10 +8,8 @@
 ## Features
 
 - **Activity Tracking:** Log various physical activities such as running, cycling, or strength training, and track duration, distance, and calories burned for each session.
-- **Nutrition Monitoring:** Record daily food intake including meals, snacks, and beverages, with a database of food items and nutritional information for calorie and macronutrient tracking.
-- **Vital Signs Monitoring:** Input vital signs data such as heart rate, blood pressure, and body weight, with visualizations and trends analysis for tracking overall health status.
 - **Goal Setting and Progress Tracking:** Set specific health and fitness goals such as weight loss, muscle gain, or improved endurance, and track progress with motivational feedback and rewards for achievements.
-- **Wellness Insights:** Generate personalized insights and recommendations based on user data including activity levels, nutrition habits, and vital signs, offering tips and suggestions for optimizing health and fitness routines.
+
 
 ## Installation
 
@@ -42,6 +40,7 @@ These are the contributors
 - [Mike Kevin Mugambi]()
 - [Joram Kireki]()
 
+
 ## Acknowledgements
 
-This work is a success thanks to `CS` courseware, and materials related to it.
+This work is a success thanks to the group members who contributed immensely and dedicated their time and resources to this undertaking.
