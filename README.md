@@ -3,7 +3,7 @@
 
 ## About:
 
-**HeFits** is a Health and Fitness Tracking System designed to help individuals monitor and manage their health and fitness goals effectively. This software solution offers features to track physical activities, nutrition intake, vital signs, and overall wellness metrics. It aims to promote a healthy lifestyle by providing users with personalized insights and recommendations based on their health data. The target users include fitness enthusiasts, athletes, and individuals looking to improve their overall well-being.
+`**HeFits**` is a Health and Fitness Tracking System designed to help individuals monitor and manage their health and fitness goals effectively. This software solution offers features to track physical activities, vital signs, and overall wellness metrics. It aims to promote a healthy lifestyle by providing users with personalized insights based on their health data. The target users include fitness enthusiasts, athletes, and individuals looking to improve their overall well-being.
 
 ## Features
 
