@@ -13,7 +13,7 @@ Public Class LoginForm
 
         ' Validate input fields
         If String.IsNullOrWhiteSpace(identifier) OrElse String.IsNullOrWhiteSpace(password) Then
-            MessageBox.Show("Please enter your username/email and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Please enter your username/email and password.", "HeFits - Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
 
@@ -23,7 +23,7 @@ Public Class LoginForm
 
                 ' Check if the identifier is a username or an email
                 Dim identifierType As String = "username"
-                If identifier.Contains("@") Then
+                If identifier.Contains("@"c) Then
                     identifierType = "email"
                 End If
 
@@ -41,9 +41,9 @@ Public Class LoginForm
                         ' Open the dashboard form or perform actions after successful login
                         Dim dashboardForm As New HeFitsDashBoardForm(LoginForm.LoggedInUserID)
                         dashboardForm.Show()
-                        Me.Hide() ' Optionally hide the login form
+                        Me.Hide()
                     Else
-                        MessageBox.Show("Invalid username/email or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        MessageBox.Show("Invalid username/email or password.", "HeFits - Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     End If
                 End Using
             End Using
@@ -60,10 +60,25 @@ Public Class LoginForm
         ' Open the signup form when the signup link is clicked
         Dim signupForm As New SignupForm()
         signupForm.Show()
-        Me.Hide() ' Optionally hide the login form
+        Me.Hide()
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
         ' Handle enter event for group box if needed
+    End Sub
+
+    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            ' Load the image
+            Dim imagePath As String = System.IO.Path.Combine(Application.StartupPath, "img\login-img0.png")
+            Dim image As Image = Image.FromFile(imagePath)
+
+            ' Set the PictureBox properties
+            LoginPictureBox.SizeMode = PictureBoxSizeMode.Zoom
+            LoginPictureBox.Image = image
+        Catch ex As Exception
+            ' Handle any exceptions
+            MessageBox.Show("Error loading image: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class
