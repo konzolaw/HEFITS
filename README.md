@@ -3,12 +3,13 @@
 
 ## About:
 
-`**HeFits**` is a Health and Fitness Tracking System designed to help individuals monitor and manage their health and fitness goals effectively. This software solution offers features to track physical activities, vital signs, and overall wellness metrics. It aims to promote a healthy lifestyle by providing users with personalized insights based on their health data. The target users include fitness enthusiasts, athletes, and individuals looking to improve their overall well-being.
+`HeFits` is a Health and Fitness Tracking System designed to help individuals monitor and manage their health and fitness goals effectively. This software solution offers features to track physical activities, vital signs, and overall wellness metrics. It aims to promote a healthy lifestyle by providing users with personalized insights based on their health data. The target users include fitness enthusiasts, athletes, and individuals looking to improve their overall well-being.
 
 ## Features
 
-- **Activity Tracking:** Log various physical activities such as running, cycling, or strength training, and track duration, distance, and calories burned for each session.
-- **Goal Setting and Progress Tracking:** Set specific health and fitness goals such as weight loss, muscle gain, or improved endurance, and track progress with motivational feedback and rewards for achievements.
+- **Activity Tracking:** Log various physical activities such as running, cycling, or strength training(part of gym functions), and track duration, and calories burned for each session.
+- **Goal Setting and Progress Tracking:** set specific health and fitness goals such as weight loss, muscle gain, or improved endurance.  
+- **Feeback**: users can type in what they think about the functionality of the app, in settings. 
 
 
 ## Installation
@@ -19,13 +20,15 @@ To install and run the HeFits app:
  ```bash
  git clone git@github.com:konzolaw/HeFits.git
  ```
-2. Install any necessary dependencies specified in the installation instructions.
-- Use Visual Basic/Install a DB eg PostgreSQL/MySQL and/or Ado.Net to connect
-3. Run the app locally or deploy it to a server as needed.
+2. Dependencies.
+    - Use Visual Basic  
+    - **DBMS** - PostgreSQL
+    - Ado.Net + `Npgsql` (NuGet package).
+3. Run the app locally.
 
 ## Contributing
 
-Contributions to the HeFits app are welcome! If you would like to contribute, please fork the repository, make your changes, and submit a pull request.  
+Contributions to the **HeFits** app are welcome! If you would like to contribute, please fork the repository, make your changes, and submit a pull request.  
 
 ## License
 This project is licensed under the MIT License. Refer to the [`license file`](LICENSE) for more information.
