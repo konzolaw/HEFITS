@@ -1,4 +1,6 @@
-﻿Public Class StartupForm
+﻿Imports System.Drawing.Drawing2D
+
+Public Class StartupForm
     Private Sub StartupForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             ' Load the image
@@ -25,4 +27,23 @@
         ' Terminate the application/welcome form
         Me.Close()
     End Sub
+
+    Private Sub StartupForm_Paint(sender As Object, e As PaintEventArgs) Handles MyBase.Paint
+        ' Define the gradient colors
+        Dim startColor As Color = Color.FromArgb(255, 0, 102, 204) ' Dark blue or green
+        Dim endColor As Color = Color.FromArgb(255, 255, 153, 51) ' Orange or vibrant green
+
+        ' Create a LinearGradientBrush for the background
+        Dim gradientBrush As New LinearGradientBrush(Me.ClientRectangle, startColor, endColor, LinearGradientMode.Vertical)
+
+        ' Fill the form background with the gradient
+        e.Graphics.FillRectangle(gradientBrush, Me.ClientRectangle)
+    End Sub
+    Public Sub New()
+        InitializeComponent()
+
+        ' Disable the control box (close, maximize, minimize buttons)
+        Me.ControlBox = False
+    End Sub
+
 End Class

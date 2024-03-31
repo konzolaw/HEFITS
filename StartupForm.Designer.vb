@@ -66,9 +66,11 @@ Partial Class StartupForm
         ' StartupButton
         ' 
         StartupButton.BackColor = Color.LawnGreen
-        StartupButton.Location = New Point(297, 427)
+        StartupButton.FlatStyle = FlatStyle.Popup
+        StartupButton.Font = New Font("Tahoma", 10F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        StartupButton.Location = New Point(317, 443)
         StartupButton.Name = "StartupButton"
-        StartupButton.Size = New Size(184, 61)
+        StartupButton.Size = New Size(136, 45)
         StartupButton.TabIndex = 3
         StartupButton.Text = "Get Started"
         StartupButton.UseVisualStyleBackColor = False
@@ -86,9 +88,9 @@ Partial Class StartupForm
         ' 
         ' LogoPictureBox
         ' 
-        LogoPictureBox.Location = New Point(218, 201)
+        LogoPictureBox.Location = New Point(260, 179)
         LogoPictureBox.Name = "LogoPictureBox"
-        LogoPictureBox.Size = New Size(335, 205)
+        LogoPictureBox.Size = New Size(256, 241)
         LogoPictureBox.TabIndex = 5
         LogoPictureBox.TabStop = False
         ' 

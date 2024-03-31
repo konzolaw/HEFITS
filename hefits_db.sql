@@ -33,3 +33,10 @@ CREATE TABLE IF NOT EXISTS goalsprogress (
     goalstatus VARCHAR(50) NOT NULL
 );
 
+-- Create feedback table
+CREATE TABLE IF NOT EXISTS feedback (
+    id SERIAL PRIMARY KEY,
+    userid INTEGER REFERENCES users (userid),
+    feedback_text TEXT NOT NULL,
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
