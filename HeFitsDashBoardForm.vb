@@ -1,10 +1,14 @@
-﻿Public Class HeFitsDashBoardForm
+﻿Imports Npgsql
+
+Public Class HeFitsDashBoardForm
     Private ReadOnly loggedInUserID As Integer
+    Private ReadOnly connectionString As String = "Host=localhost;Username=postgres;Password=pseudo-xkcdpg;Database=hefits;"
 
     ' Constructor with parameter to accept the logged-in user's ID
     Public Sub New(userId As Integer)
         InitializeComponent()
         loggedInUserID = userId
+        LoadNotStartedGoals()
     End Sub
 
     ' Button click event for activity tracking
@@ -46,5 +50,31 @@
 
         ' Close the dashboard form
         Me.Close()
+    End Sub
+
+    ' Method to load and display "Not Started" goals
+    Private Sub LoadNotStartedGoals()
+        Try
+            Using conn As New NpgsqlConnection(connectionString)
+                conn.Open()
+
+                Dim query As String = "SELECT goaldescription FROM goalsprogress WHERE userid = @userid AND goalstatus = 'Not Started'"
+                Using cmd As New NpgsqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@userid", loggedInUserID)
+                    Dim reader As NpgsqlDataReader = cmd.ExecuteReader()
+
+                    ' Clear existing data in the list box
+                    NotStartedGoalsListBox.Items.Clear()
+
+                    While reader.Read()
+                        Dim goalDescription As String = reader.GetString(0)
+                        ' Add goal information to the list box
+                        NotStartedGoalsListBox.Items.Add(goalDescription)
+                    End While
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error loading 'Not Started' goals: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class

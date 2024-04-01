@@ -22,6 +22,7 @@ Partial Class SignupForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SignupForm))
         GroupBox1 = New GroupBox()
         SignupUsernameTextBox = New TextBox()
         Label3 = New Label()
@@ -88,7 +89,7 @@ Partial Class SignupForm
         SignupButton.FlatStyle = FlatStyle.Popup
         SignupButton.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         SignupButton.ForeColor = SystemColors.ActiveCaptionText
-        SignupButton.Location = New Point(254, 256)
+        SignupButton.Location = New Point(267, 243)
         SignupButton.Name = "SignupButton"
         SignupButton.Size = New Size(97, 50)
         SignupButton.TabIndex = 2
@@ -115,9 +116,11 @@ Partial Class SignupForm
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(517, 44)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(314, 250)
+        PictureBox1.Size = New Size(337, 356)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 7
         PictureBox1.TabStop = False
         ' 
