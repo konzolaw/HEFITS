@@ -59,9 +59,10 @@ Partial Class SettingsForm
         GroupBox2.Controls.Add(Label1)
         GroupBox2.Controls.Add(SubmitFeedbackButton)
         GroupBox2.Controls.Add(FeedbackTextBox)
-        GroupBox2.Location = New Point(350, 250)
+        GroupBox2.Font = New Font("Segoe UI Emoji", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox2.Location = New Point(359, 250)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(394, 176)
+        GroupBox2.Size = New Size(385, 176)
         GroupBox2.TabIndex = 7
         GroupBox2.TabStop = False
         GroupBox2.Text = "Feedback"
@@ -70,9 +71,9 @@ Partial Class SettingsForm
         ' 
         Label1.AutoSize = True
         Label1.BackColor = SystemColors.AppWorkspace
-        Label1.Location = New Point(291, 27)
+        Label1.Location = New Point(276, 33)
         Label1.Name = "Label1"
-        Label1.Size = New Size(75, 25)
+        Label1.Size = New Size(100, 30)
         Label1.TabIndex = 9
         Label1.Text = "HeFits :)"
         ' 
@@ -97,9 +98,9 @@ Partial Class SettingsForm
         ' 
         ' HeFitsSettingsPictureBox
         ' 
-        HeFitsSettingsPictureBox.Location = New Point(6, 40)
+        HeFitsSettingsPictureBox.Location = New Point(6, 28)
         HeFitsSettingsPictureBox.Name = "HeFitsSettingsPictureBox"
-        HeFitsSettingsPictureBox.Size = New Size(319, 198)
+        HeFitsSettingsPictureBox.Size = New Size(341, 215)
         HeFitsSettingsPictureBox.TabIndex = 5
         HeFitsSettingsPictureBox.TabStop = False
         ' 

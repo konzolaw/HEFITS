@@ -23,18 +23,22 @@ Partial Class SignupForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         GroupBox1 = New GroupBox()
+        SignupUsernameTextBox = New TextBox()
+        Label3 = New Label()
         SignupPasswordMaskedTextBox = New MaskedTextBox()
         SignupEmailTextBox = New TextBox()
         SignupButton = New Button()
         Label2 = New Label()
         Label1 = New Label()
-        SignupUsernameTextBox = New TextBox()
-        Label3 = New Label()
+        PictureBox1 = New PictureBox()
         GroupBox1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.Gray
+        GroupBox1.Controls.Add(PictureBox1)
         GroupBox1.Controls.Add(SignupUsernameTextBox)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(SignupPasswordMaskedTextBox)
@@ -42,11 +46,27 @@ Partial Class SignupForm
         GroupBox1.Controls.Add(SignupButton)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(92, 42)
+        GroupBox1.Location = New Point(12, 12)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(597, 340)
+        GroupBox1.Size = New Size(879, 426)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
+        ' 
+        ' SignupUsernameTextBox
+        ' 
+        SignupUsernameTextBox.Location = New Point(189, 98)
+        SignupUsernameTextBox.Name = "SignupUsernameTextBox"
+        SignupUsernameTextBox.Size = New Size(259, 31)
+        SignupUsernameTextBox.TabIndex = 6
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(64, 96)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(95, 25)
+        Label3.TabIndex = 5
+        Label3.Text = "Username:"
         ' 
         ' SignupPasswordMaskedTextBox
         ' 
@@ -64,12 +84,16 @@ Partial Class SignupForm
         ' 
         ' SignupButton
         ' 
-        SignupButton.Location = New Point(172, 264)
+        SignupButton.BackColor = Color.Olive
+        SignupButton.FlatStyle = FlatStyle.Popup
+        SignupButton.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        SignupButton.ForeColor = SystemColors.ActiveCaptionText
+        SignupButton.Location = New Point(254, 256)
         SignupButton.Name = "SignupButton"
-        SignupButton.Size = New Size(211, 49)
+        SignupButton.Size = New Size(97, 50)
         SignupButton.TabIndex = 2
         SignupButton.Text = "Sign Up"
-        SignupButton.UseVisualStyleBackColor = True
+        SignupButton.UseVisualStyleBackColor = False
         ' 
         ' Label2
         ' 
@@ -89,32 +113,27 @@ Partial Class SignupForm
         Label1.TabIndex = 0
         Label1.Text = "Email:"
         ' 
-        ' SignupUsernameTextBox
+        ' PictureBox1
         ' 
-        SignupUsernameTextBox.Location = New Point(189, 98)
-        SignupUsernameTextBox.Name = "SignupUsernameTextBox"
-        SignupUsernameTextBox.Size = New Size(259, 31)
-        SignupUsernameTextBox.TabIndex = 6
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(64, 96)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(95, 25)
-        Label3.TabIndex = 5
-        Label3.Text = "Username:"
+        PictureBox1.Location = New Point(517, 44)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(314, 250)
+        PictureBox1.TabIndex = 7
+        PictureBox1.TabStop = False
         ' 
         ' SignupForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        BackColor = Color.Silver
+        ClientSize = New Size(903, 450)
         Controls.Add(GroupBox1)
+        FormBorderStyle = FormBorderStyle.None
         Name = "SignupForm"
         Text = "SignupForm"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -126,4 +145,5 @@ Partial Class SignupForm
     Friend WithEvents SignupEmailTextBox As TextBox
     Friend WithEvents SignupUsernameTextBox As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
