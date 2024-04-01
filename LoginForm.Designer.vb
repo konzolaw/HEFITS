@@ -34,6 +34,7 @@ Partial Class LoginForm
         LoginButton = New Button()
         Label2 = New Label()
         Label1 = New Label()
+        ExitLoginButton = New Button()
         GroupBox1.SuspendLayout()
         CType(LoginPictureBox, ComponentModel.ISupportInitialize).BeginInit()
         CType(LoginPagePictureBox, ComponentModel.ISupportInitialize).BeginInit()
@@ -42,6 +43,7 @@ Partial Class LoginForm
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.Lavender
+        GroupBox1.Controls.Add(ExitLoginButton)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(LoginPictureBox)
         GroupBox1.Controls.Add(LoginPagePictureBox)
@@ -62,7 +64,7 @@ Partial Class LoginForm
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.FromArgb(CByte(64), CByte(0), CByte(64))
-        Label4.Font = New Font("Verdana", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Verdana", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.DarkSalmon
         Label4.Location = New Point(32, -3)
         Label4.Name = "Label4"
@@ -92,7 +94,7 @@ Partial Class LoginForm
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.CadetBlue
-        Label3.Font = New Font("Segoe UI", 7.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(449, 30)
         Label3.Name = "Label3"
         Label3.Size = New Size(244, 38)
@@ -104,7 +106,7 @@ Partial Class LoginForm
         SignupLinkLabel.AutoSize = True
         SignupLinkLabel.BackColor = Color.OliveDrab
         SignupLinkLabel.BorderStyle = BorderStyle.Fixed3D
-        SignupLinkLabel.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        SignupLinkLabel.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         SignupLinkLabel.Location = New Point(519, 80)
         SignupLinkLabel.Name = "SignupLinkLabel"
         SignupLinkLabel.Size = New Size(105, 34)
@@ -131,7 +133,7 @@ Partial Class LoginForm
         ' LoginButton
         ' 
         LoginButton.BackColor = SystemColors.ActiveCaption
-        LoginButton.Font = New Font("Tahoma", 14.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LoginButton.Font = New Font("Tahoma", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         LoginButton.ForeColor = SystemColors.ControlDarkDark
         LoginButton.Location = New Point(294, 360)
         LoginButton.Name = "LoginButton"
@@ -144,7 +146,7 @@ Partial Class LoginForm
         ' 
         Label2.AutoSize = True
         Label2.BackColor = SystemColors.ActiveBorder
-        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(138, 304)
         Label2.Name = "Label2"
         Label2.Size = New Size(97, 25)
@@ -155,16 +157,27 @@ Partial Class LoginForm
         ' 
         Label1.AutoSize = True
         Label1.BackColor = SystemColors.ActiveBorder
-        Label1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(85, 251)
         Label1.Name = "Label1"
         Label1.Size = New Size(156, 25)
         Label1.TabIndex = 0
         Label1.Text = "Username/Email:"
         ' 
+        ' ExitLoginButton
+        ' 
+        ExitLoginButton.BackColor = Color.DarkRed
+        ExitLoginButton.ForeColor = SystemColors.ButtonFace
+        ExitLoginButton.Location = New Point(633, 360)
+        ExitLoginButton.Name = "ExitLoginButton"
+        ExitLoginButton.Size = New Size(60, 49)
+        ExitLoginButton.TabIndex = 9
+        ExitLoginButton.Text = "Exit"
+        ExitLoginButton.UseVisualStyleBackColor = False
+        ' 
         ' LoginForm
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonHighlight
         ClientSize = New Size(761, 464)
@@ -190,4 +203,5 @@ Partial Class LoginForm
     Friend WithEvents LoginPagePictureBox As PictureBox
     Friend WithEvents LoginPictureBox As PictureBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents ExitLoginButton As Button
 End Class

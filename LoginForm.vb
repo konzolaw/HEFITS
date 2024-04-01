@@ -81,4 +81,12 @@ Public Class LoginForm
             MessageBox.Show("Error loading image: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+    Private Sub ExitLoginButton_Click(sender As Object, e As EventArgs) Handles ExitLoginButton.Click
+        ' log off system;
+        Me.Close()
+
+        Dim startupForm As New StartupForm()
+        startupForm.Show()
+    End Sub
+
 End Class

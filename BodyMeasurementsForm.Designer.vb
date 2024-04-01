@@ -89,9 +89,9 @@ Partial Class BodyMeasurementsForm
         Label2.BackColor = SystemColors.ButtonShadow
         Label2.Location = New Point(28, 101)
         Label2.Name = "Label2"
-        Label2.Size = New Size(152, 25)
+        Label2.Size = New Size(132, 25)
         Label2.TabIndex = 3
-        Label2.Text = " Height in metres:"
+        Label2.Text = " Height (in cm):"
         ' 
         ' HeightTextBox
         ' 
