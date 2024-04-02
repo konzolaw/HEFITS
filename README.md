@@ -26,6 +26,10 @@ To install and run the HeFits app:
     - Ado.Net + `Npgsql` (NuGet package).
 3. Run the app locally.
 
+## Signup For It 📝
+
+![](./bin/Debug/net8.0-windows/img/sente-up.png)
+
 ## Contributing
 
 Contributions to the **HeFits** app are welcome! If you would like to contribute, please fork the repository, make your changes, and submit a pull request.  
