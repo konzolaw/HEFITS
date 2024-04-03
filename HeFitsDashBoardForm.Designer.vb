@@ -84,7 +84,7 @@ Partial Class HeFitsDashBoardForm
         GoalsProgressButton.BackColor = Color.Transparent
         GoalsProgressButton.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         GoalsProgressButton.ForeColor = Color.Black
-        GoalsProgressButton.Location = New Point(102, 244)
+        GoalsProgressButton.Location = New Point(105, 301)
         GoalsProgressButton.Name = "GoalsProgressButton"
         GoalsProgressButton.Size = New Size(199, 44)
         GoalsProgressButton.TabIndex = 4
@@ -110,7 +110,7 @@ Partial Class HeFitsDashBoardForm
         BodyMeasurementsButton.BackColor = Color.Transparent
         BodyMeasurementsButton.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         BodyMeasurementsButton.ForeColor = Color.Black
-        BodyMeasurementsButton.Location = New Point(102, 307)
+        BodyMeasurementsButton.Location = New Point(103, 175)
         BodyMeasurementsButton.Name = "BodyMeasurementsButton"
         BodyMeasurementsButton.Size = New Size(199, 44)
         BodyMeasurementsButton.TabIndex = 2
@@ -123,7 +123,7 @@ Partial Class HeFitsDashBoardForm
         ActivityTrackingButton.BackColor = Color.Transparent
         ActivityTrackingButton.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ActivityTrackingButton.ForeColor = Color.Black
-        ActivityTrackingButton.Location = New Point(105, 194)
+        ActivityTrackingButton.Location = New Point(106, 240)
         ActivityTrackingButton.Name = "ActivityTrackingButton"
         ActivityTrackingButton.Size = New Size(196, 44)
         ActivityTrackingButton.TabIndex = 0
@@ -145,7 +145,7 @@ Partial Class HeFitsDashBoardForm
         ' 
         PictureBox2.BackColor = Color.White
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(35, 195)
+        PictureBox2.Location = New Point(36, 241)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(51, 43)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
@@ -165,7 +165,7 @@ Partial Class HeFitsDashBoardForm
         ' 
         PictureBox4.BackColor = Color.White
         PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(33, 245)
+        PictureBox4.Location = New Point(36, 302)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(51, 43)
         PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
@@ -176,7 +176,7 @@ Partial Class HeFitsDashBoardForm
         ' 
         PictureBox5.BackColor = Color.White
         PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(35, 308)
+        PictureBox5.Location = New Point(36, 176)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(51, 43)
         PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage

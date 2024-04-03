@@ -99,4 +99,8 @@ Public Class SettingsForm
             MessageBox.Show("Error loading image: " & ex.Message, "HeFits - file Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+    Private Sub FeedbackTextBox_TextChanged(sender As Object, e As EventArgs) Handles FeedbackTextBox.TextChanged
+
+    End Sub
 End Class
